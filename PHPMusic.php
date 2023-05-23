@@ -123,7 +123,7 @@ audio::-webkit-media-controls-mute-button {
 
 <div class="container mx-auto px-4 my-8">
     <?php
-    $jsonUrl = "https://cyberwarfare.site/Assets/songs.json";
+    $jsonUrl = "songs.json";
     $jsonData = file_get_contents($jsonUrl);
 
     $data = json_decode($jsonData, true);
