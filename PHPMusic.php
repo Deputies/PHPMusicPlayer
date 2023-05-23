@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>PHP Music Player</title>
-    <link rel="icon" href="/Assets/SkyNet.ico">
+    <link rel="icon" href="favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         .overlay {
@@ -137,12 +137,12 @@ audio::-webkit-media-controls-mute-button {
         <div class="mb-8">
             <h2 id="album-names" class="text-2xl text-white font-bold mb-4"><?php echo $albumName; ?></h2>
             
-            <img id="artwork-img" class="mb-4" src="/Assets/music/<?php echo $albumName; ?>/<?php echo $artwork; ?>" alt="<?php echo $albumName; ?> Artwork" style="max-width: 200px;">
+            <img id="artwork-img" class="mb-4" src="<?php echo $albumName; ?>/<?php echo $artwork; ?>" alt="<?php echo $albumName; ?> Artwork" style="max-width: 200px;">
 
             <div class="grid grid-cols-2 gap-4">
                 <?php foreach ($tracks as $index => $track) { ?>
                     <div class="p-4 bg-gray-200 rounded shadow">
-                        <p class="song-name cursor-pointer" data-src="/Assets/music/<?php echo $albumName; ?>/<?php echo $track; ?>.mp3"><?php echo $index + 1 . '. ' . $track; ?></p>
+                        <p class="song-name cursor-pointer" data-src="<?php echo $albumName; ?>/<?php echo $track; ?>.mp3"><?php echo $index + 1 . '. ' . $track; ?></p>
                     </div>
                 <?php } ?>
             </div>
